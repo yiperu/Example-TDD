@@ -17,11 +17,12 @@
 
 - (void)testMultiplicacion {
   
-  Euro * euro = [[Euro alloc] initWithAmount:5];
-  [euro times:2];
+  Euro * five = [[Euro alloc] initWithAmount:5];
+  Euro * product = [five times:2];
   
-  XCTAssertEqual(euro.amount, 10, @" 5 x 2 should be 10");
-  
+  XCTAssertEqual(product.amount, 10, @"Both amounts shoud be equal");
+  product = [five times:3];
+  XCTAssertEqual(product.amount, 15, @"Both amounts shoud be equal");
 }
 
 @end

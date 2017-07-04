@@ -32,4 +32,10 @@
   
 }
 
+#pragma mark - overwritten
+
+-(BOOL)isEqual:(id)object {
+  return ([self amount] == [object amount]);
+}
+
 @end

@@ -25,4 +25,14 @@
   XCTAssertEqual(product.amount, 15, @"Both amounts shoud be equal");
 }
 
+
+- (void)testEquality {
+  
+  Euro *five = [[Euro alloc] initWithAmount:5];
+  Euro *ten = [[Euro alloc] initWithAmount:10];
+  Euro *total = [five times:2];
+  
+  XCTAssertEqualObjects(ten, total, @"Equivalent Object should be Equal!");
+  
+}
 @end

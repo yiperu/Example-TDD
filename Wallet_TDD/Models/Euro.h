@@ -13,6 +13,6 @@
 @property (nonatomic, readonly) NSUInteger amount;
 
 - (instancetype)initWithAmount:(NSUInteger)amount;
-- (void)times:(NSUInteger)multiplier;
+- (Euro *)times:(NSUInteger)multiplier;
 
 @end

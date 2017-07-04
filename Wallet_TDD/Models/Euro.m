@@ -26,8 +26,10 @@
   return self;
 }
 
-- (void)times:(NSUInteger)multiplier {
-  self.amount *=  multiplier;
+- (Euro *)times:(NSUInteger)multiplier {
+  
+  return [[Euro alloc] initWithAmount:self.amount * multiplier];
+  
 }
 
 @end

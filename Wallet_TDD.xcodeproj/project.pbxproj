@@ -13,7 +13,7 @@
 		1E5482011F0B2EB700E900AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5481FF1F0B2EB700E900AB /* Main.storyboard */; };
 		1E5482031F0B2EB700E900AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5482021F0B2EB700E900AB /* Assets.xcassets */; };
 		1E5482061F0B2EB700E900AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5482041F0B2EB700E900AB /* LaunchScreen.storyboard */; };
-		1E5482111F0B2EB700E900AB /* Wallet_TDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5482101F0B2EB700E900AB /* Wallet_TDDTests.m */; };
+		1E5482211F0B35BB00E900AB /* EuroTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5482201F0B35BB00E900AB /* EuroTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,8 @@
 		1E5482051F0B2EB700E900AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E5482071F0B2EB700E900AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E54820C1F0B2EB700E900AB /* Wallet_TDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wallet_TDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E5482101F0B2EB700E900AB /* Wallet_TDDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wallet_TDDTests.m; sourceTree = "<group>"; };
 		1E5482121F0B2EB700E900AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E5482201F0B35BB00E900AB /* EuroTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EuroTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 		1E54820F1F0B2EB700E900AB /* Wallet_TDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				1E5482101F0B2EB700E900AB /* Wallet_TDDTests.m */,
+				1E54821F1F0B35A600E900AB /* Models */,
 				1E5482121F0B2EB700E900AB /* Info.plist */,
 			);
 			path = Wallet_TDDTests;
@@ -117,6 +117,14 @@
 			children = (
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		1E54821F1F0B35A600E900AB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E5482201F0B35BB00E900AB /* EuroTest.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E5482111F0B2EB700E900AB /* Wallet_TDDTests.m in Sources */,
+				1E5482211F0B35BB00E900AB /* EuroTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +434,7 @@
 				1E5482171F0B2EB700E900AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E5482181F0B2EB700E900AB /* Build configuration list for PBXNativeTarget "Wallet_TDDTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +443,7 @@
 				1E54821A1F0B2EB700E900AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

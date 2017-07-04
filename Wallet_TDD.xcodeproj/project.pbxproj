@@ -14,6 +14,7 @@
 		1E5482031F0B2EB700E900AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5482021F0B2EB700E900AB /* Assets.xcassets */; };
 		1E5482061F0B2EB700E900AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5482041F0B2EB700E900AB /* LaunchScreen.storyboard */; };
 		1E5482211F0B35BB00E900AB /* EuroTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5482201F0B35BB00E900AB /* EuroTest.m */; };
+		1EFA89531F0B37A300B86CCA /* Euro.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA89521F0B37A300B86CCA /* Euro.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		1E54820C1F0B2EB700E900AB /* Wallet_TDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wallet_TDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5482121F0B2EB700E900AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E5482201F0B35BB00E900AB /* EuroTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EuroTest.m; sourceTree = "<group>"; };
+		1EFA89511F0B37A300B86CCA /* Euro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Euro.h; path = Models/Euro.h; sourceTree = "<group>"; };
+		1EFA89521F0B37A300B86CCA /* Euro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Euro.m; path = Models/Euro.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,7 @@
 		1E54821B1F0B2ECE00E900AB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1EFA89501F0B378900B86CCA /* Models */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -123,6 +127,15 @@
 			isa = PBXGroup;
 			children = (
 				1E5482201F0B35BB00E900AB /* EuroTest.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		1EFA89501F0B378900B86CCA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1EFA89511F0B37A300B86CCA /* Euro.h */,
+				1EFA89521F0B37A300B86CCA /* Euro.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -231,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EFA89531F0B37A300B86CCA /* Euro.m in Sources */,
 				1E5481FE1F0B2EB600E900AB /* ViewController.m in Sources */,
 				1E5481FB1F0B2EB600E900AB /* AppDelegate.m in Sources */,
 				1E5481F81F0B2EB600E900AB /* main.m in Sources */,

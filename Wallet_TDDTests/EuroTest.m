@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Euro.h"
 
 @interface EuroTest : XCTestCase
 
@@ -17,7 +18,7 @@
 - (void)testMultiplicacion {
   
   Euro * euro = [[Euro alloc] initWithAmount:5];
-  [euro times:5];
+  [euro times:2];
   
   XCTAssertEqual(euro.amount, 10, @" 5 x 2 should be 10");
   

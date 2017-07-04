@@ -14,7 +14,6 @@
 		1E5482031F0B2EB700E900AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5482021F0B2EB700E900AB /* Assets.xcassets */; };
 		1E5482061F0B2EB700E900AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5482041F0B2EB700E900AB /* LaunchScreen.storyboard */; };
 		1E5482111F0B2EB700E900AB /* Wallet_TDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5482101F0B2EB700E900AB /* Wallet_TDDTests.m */; };
-		1E54821E1F0B2EF000E900AB /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E54821D1F0B2EF000E900AB /* Money.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +40,6 @@
 		1E54820C1F0B2EB700E900AB /* Wallet_TDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wallet_TDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5482101F0B2EB700E900AB /* Wallet_TDDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wallet_TDDTests.m; sourceTree = "<group>"; };
 		1E5482121F0B2EB700E900AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E54821C1F0B2EF000E900AB /* Money.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Money.h; path = Classes/Money.h; sourceTree = "<group>"; };
-		1E54821D1F0B2EF000E900AB /* Money.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Money.m; path = Classes/Money.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +115,6 @@
 		1E54821B1F0B2ECE00E900AB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1E54821C1F0B2EF000E900AB /* Money.h */,
-				1E54821D1F0B2EF000E900AB /* Money.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -230,7 +225,6 @@
 			files = (
 				1E5481FE1F0B2EB600E900AB /* ViewController.m in Sources */,
 				1E5481FB1F0B2EB600E900AB /* AppDelegate.m in Sources */,
-				1E54821E1F0B2EF000E900AB /* Money.m in Sources */,
 				1E5481F81F0B2EB600E900AB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

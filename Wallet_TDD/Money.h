@@ -1,5 +1,5 @@
 //
-//  Dolar.h
+//  Money.h
 //  Wallet_TDD
 //
 //  Created by Henry AT on 7/5/17.
@@ -7,11 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Money.h"
 
-@interface Dolar : Money
+@interface Money : NSObject
 
 - (instancetype)initWithAmount:(NSUInteger)amount;
-- (Dolar *)times:(NSUInteger)multiplier;
+- (Money *)times:(NSUInteger)multiplier;
 
 @end

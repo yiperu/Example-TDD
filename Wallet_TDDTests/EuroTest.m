@@ -18,11 +18,9 @@
 - (void)testMultiplicacion {
   
   Euro * five = [[Euro alloc] initWithAmount:5];
-  Euro * product = [five times:2];
   
-  XCTAssertEqual(product.amount, 10, @"Both amounts shoud be equal");
-  product = [five times:3];
-  XCTAssertEqual(product.amount, 15, @"Both amounts shoud be equal");
+  XCTAssertEqualObjects([[Euro alloc] initWithAmount:10], [five times:2],@"Both euros should be Equal");
+  XCTAssertEqualObjects([[Euro alloc] initWithAmount:15], [five times:3],@"Both euros should be Equal");  
 }
 
 

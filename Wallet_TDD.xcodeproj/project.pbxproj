@@ -16,6 +16,7 @@
 		1E5482211F0B35BB00E900AB /* EuroTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5482201F0B35BB00E900AB /* EuroTest.m */; };
 		1EFA89531F0B37A300B86CCA /* Euro.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA89521F0B37A300B86CCA /* Euro.m */; };
 		1EFA89551F0CA93400B86CCA /* DolarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA89541F0CA93400B86CCA /* DolarTest.m */; };
+		1EFA89581F0CAAA100B86CCA /* Dolar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA89571F0CAAA100B86CCA /* Dolar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		1EFA89511F0B37A300B86CCA /* Euro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Euro.h; path = Models/Euro.h; sourceTree = "<group>"; };
 		1EFA89521F0B37A300B86CCA /* Euro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Euro.m; path = Models/Euro.m; sourceTree = "<group>"; };
 		1EFA89541F0CA93400B86CCA /* DolarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolarTest.m; sourceTree = "<group>"; };
+		1EFA89561F0CAAA100B86CCA /* Dolar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolar.h; sourceTree = "<group>"; };
+		1EFA89571F0CAAA100B86CCA /* Dolar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 			children = (
 				1EFA89511F0B37A300B86CCA /* Euro.h */,
 				1EFA89521F0B37A300B86CCA /* Euro.m */,
+				1EFA89561F0CAAA100B86CCA /* Dolar.h */,
+				1EFA89571F0CAAA100B86CCA /* Dolar.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EFA89581F0CAAA100B86CCA /* Dolar.m in Sources */,
 				1EFA89531F0B37A300B86CCA /* Euro.m in Sources */,
 				1E5481FE1F0B2EB600E900AB /* ViewController.m in Sources */,
 				1E5481FB1F0B2EB600E900AB /* AppDelegate.m in Sources */,

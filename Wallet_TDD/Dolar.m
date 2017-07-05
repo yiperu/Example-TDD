@@ -37,4 +37,9 @@
   return ([self amount] == [object amount]);
 }
 
+//El metodo hash es del la superclase del method NSObject
+//devuelve un numero que es la direccion de memoria, la direccion donde esta el objeto
+- (NSUInteger)hash {
+  return (NSUInteger)self.amount;
+}
 @end

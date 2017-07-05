@@ -23,4 +23,17 @@
   XCTAssertEqualObjects([[Dolar alloc] initWithAmount:15], [five times:3],@"Both euros should be Equal");
 }
 
+
+- (void)testEquality {
+  
+  Dolar *five = [[Dolar alloc] initWithAmount:5];
+  Dolar *ten = [[Dolar alloc] initWithAmount:10];
+  Dolar *total = [five times:2];
+  
+  XCTAssertEqualObjects(ten, total, @"Equivalent Object should be Equal!");
+  XCTAssertFalse([total isEqual:five], @"Non Equivalent objects should no be Equal");
+  
+}
+
+
 @end

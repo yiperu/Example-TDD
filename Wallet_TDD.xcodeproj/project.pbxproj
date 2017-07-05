@@ -19,6 +19,7 @@
 		1EFA89581F0CAAA100B86CCA /* Dolar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA89571F0CAAA100B86CCA /* Dolar.m */; };
 		1EFA895B1F0CAF9200B86CCA /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA895A1F0CAF9200B86CCA /* Money.m */; };
 		1EFA895F1F0CC2B400B86CCA /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA895E1F0CC2B400B86CCA /* NSObject+GNUStepAddons.m */; };
+		1EFA89611F0CC5CD00B86CCA /* MoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA89601F0CC5CD00B86CCA /* MoneyTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		1EFA895A1F0CAF9200B86CCA /* Money.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Money.m; sourceTree = "<group>"; };
 		1EFA895D1F0CC2B400B86CCA /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
 		1EFA895E1F0CC2B400B86CCA /* NSObject+GNUStepAddons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStepAddons.m"; sourceTree = "<group>"; };
+		1EFA89601F0CC5CD00B86CCA /* MoneyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoneyTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			children = (
 				1E5482201F0B35BB00E900AB /* EuroTest.m */,
 				1EFA89541F0CA93400B86CCA /* DolarTest.m */,
+				1EFA89601F0CC5CD00B86CCA /* MoneyTest.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EFA89611F0CC5CD00B86CCA /* MoneyTest.m in Sources */,
 				1EFA89551F0CA93400B86CCA /* DolarTest.m in Sources */,
 				1E5482211F0B35BB00E900AB /* EuroTest.m in Sources */,
 			);

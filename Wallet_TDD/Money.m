@@ -39,8 +39,15 @@
   return [NSString stringWithFormat:@"<%@ %ld", [self class], (long)[self amount]];
 }
 
+#pragma mark - overwritten
+
 -(BOOL)isEqual:(id)object {
   return ([self amount] == [object amount]);
 }
 
+//El metodo hash es del la superclase del method NSObject
+//devuelve un numero que es la direccion de memoria, la direccion donde esta el objeto
+- (NSUInteger)hash {
+  return (NSUInteger)self.amount;
+}
 @end

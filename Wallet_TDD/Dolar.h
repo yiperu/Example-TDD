@@ -11,7 +11,6 @@
 
 @interface Dolar : Money
 
-- (instancetype)initWithAmount:(NSUInteger)amount;
 - (Dolar *)times:(NSUInteger)multiplier;
 
 @end

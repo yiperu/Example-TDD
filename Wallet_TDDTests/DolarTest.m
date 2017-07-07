@@ -31,6 +31,7 @@
   Dolar *total = [five times:2];
   
   XCTAssertEqualObjects(ten, total, @"Equivalent Object should be Equal!");
+  // Cuando compruebas algo binario, es recomendable comprobar ambos casos:
   XCTAssertFalse([total isEqual:five], @"Non Equivalent objects should no be Equal");
   
 }

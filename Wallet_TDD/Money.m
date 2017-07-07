@@ -39,4 +39,8 @@
   return [NSString stringWithFormat:@"<%@ %ld", [self class], (long)[self amount]];
 }
 
+-(BOOL)isEqual:(id)object {
+  return ([self amount] == [object amount]);
+}
+
 @end

@@ -9,6 +9,14 @@
 #import <XCTest/XCTest.h>
 #import "Euro.h"
 
+
+// Esta es la forma mas rapida de acceder a las partes privadas de una clase
+//@interface Euro ()
+//
+//@property (nonatomic) NSInteger amount;
+//
+//@end
+
 @interface EuroTest : XCTestCase
 
 @end
@@ -42,5 +50,20 @@
   XCTAssertEqual([a hash], [b hash], @"Equal objects must have same hash");
 }
 
+- (void)testAmountStorage {
+  
+  Euro *euro = [[Euro alloc] initWithAmount:2];
+//  XCTAssertEqual(2, [euro amount],@"The value retrieved should be the same as the stored");
+//  XCTAssertEqualObjects(@(2),[euro performSelector:@selector(amount)],@"The value retrieved should be the same as the stored");
+  
+  // Vamos a hacer que el compilador se calle:
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+  
+  XCTAssertEqual(2,[[euro performSelector:@selector(amount)] integerValue],@"The value retrieved should be the same as the stored");
+  
+#pragma clang diagnostic pop
+  
+}
 
 @end

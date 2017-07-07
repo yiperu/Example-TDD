@@ -13,7 +13,7 @@
 
 - (Dolar *)times:(NSUInteger)multiplier {
   
-  return [[Dolar alloc] initWithAmount:self.amount * multiplier];
+  return [[Dolar alloc] initWithAmount:[self.amount integerValue] * multiplier];
   
 }
 

@@ -13,10 +13,10 @@
 @implementation Money
 
 
-- (instancetype)initWithAmount:(NSUInteger)amount {
+- (instancetype)initWithAmount:(NSInteger)amount {
   
   if(self = [super init]) {
-    _amount = amount;
+    _amount = @(amount);
   }
   
   return self;
@@ -31,7 +31,8 @@
 
 #pragma mark - Overwritten
 - (NSString *)description {
-  return [NSString stringWithFormat:@"<%@ %ld", [self class], (long)[self amount]];
+  // TODO: Verificar
+  return [NSString stringWithFormat:@"<%@ amount: %li", [self class], [[self amount] integerValue]];
 }
 
 #pragma mark - overwritten

@@ -10,7 +10,7 @@
 
 @interface Money : NSObject
 
-- (instancetype)initWithAmount:(NSUInteger)amount;
+- (instancetype)initWithAmount:(NSInteger)amount;
 - (Money *)times:(NSUInteger)multiplier;
 
 @end

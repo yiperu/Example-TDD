@@ -7,13 +7,8 @@
 //
 
 #import "Euro.h"
+#import "Money-Private.h"
 
-
-@interface Euro ()
-
-@property (nonatomic) NSUInteger amount;
-
-@end
 
 @implementation Euro
 

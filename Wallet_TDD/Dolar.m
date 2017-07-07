@@ -7,12 +7,7 @@
 //
 
 #import "Dolar.h"
-
-@interface Dolar ()
-
-@property (nonatomic) NSUInteger amount;
-
-@end
+#import "Money-Private.h"
 
 @implementation Dolar
 

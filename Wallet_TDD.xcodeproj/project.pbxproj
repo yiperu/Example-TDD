@@ -33,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E3BCF8D1F0FB31100E9A995 /* Money-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Money-Private.h"; sourceTree = "<group>"; };
 		1E5481F31F0B2EB600E900AB /* Wallet_TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet_TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5481F71F0B2EB600E900AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1E5481F91F0B2EB600E900AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -156,6 +157,7 @@
 				1EFA89571F0CAAA100B86CCA /* Dolar.m */,
 				1EFA89591F0CAF9200B86CCA /* Money.h */,
 				1EFA895A1F0CAF9200B86CCA /* Money.m */,
+				1E3BCF8D1F0FB31100E9A995 /* Money-Private.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";

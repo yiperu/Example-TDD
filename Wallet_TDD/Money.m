@@ -8,12 +8,7 @@
 
 #import "Money.h"
 #import "NSObject+GNUStepAddons.h"
-
-@interface Money ()
-
-@property (nonatomic) NSUInteger amount;
-
-@end
+#import "Money-Private.h"
 
 @implementation Money
 

@@ -10,6 +10,9 @@
 
 @interface Money : NSObject
 
++ (id)euroWithAmount:(NSInteger)amount;
++ (id)dollarWithAmount:(NSInteger)amount;
+
 - (instancetype)initWithAmount:(NSInteger)amount;
 - (Money *)times:(NSUInteger)multiplier;
 

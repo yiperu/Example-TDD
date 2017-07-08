@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "Euro.h"
+#import "Money.h"
 
 
 // Esta es la forma mas rapida de acceder a las partes privadas de una clase
@@ -25,17 +26,19 @@
 
 - (void)testMultiplicacion {
   
-  Euro * five = [[Euro alloc] initWithAmount:5];
+  Euro * five = [Money euroWithAmount:5];
   
-  XCTAssertEqualObjects([[Euro alloc] initWithAmount:10], [five times:2],@"Both euros should be Equal");
-  XCTAssertEqualObjects([[Euro alloc] initWithAmount:15], [five times:3],@"Both euros should be Equal");  
+
+  
+  XCTAssertEqualObjects([Money euroWithAmount:10], [five times:2],@"Both euros should be Equal");
+  XCTAssertEqualObjects([Money euroWithAmount:15], [five times:3],@"Both euros should be Equal");
 }
 
 
 - (void)testEquality {
   
-  Euro *five = [[Euro alloc] initWithAmount:5];
-  Euro *ten = [[Euro alloc] initWithAmount:10];
+  Euro *five = [Money euroWithAmount:5];
+  Euro *ten = [Money euroWithAmount:10];
   Euro *total = [five times:2];
   
   XCTAssertEqualObjects(ten, total, @"Equivalent Object should be Equal!");
@@ -44,15 +47,15 @@
 
 - (void)testHash {
   
-  Euro * a = [[Euro alloc] initWithAmount:1];
-  Euro * b = [[Euro alloc] initWithAmount:1];
+  Euro * a = [Money euroWithAmount:1];
+  Euro * b = [Money euroWithAmount:1];
   
   XCTAssertEqual([a hash], [b hash], @"Equal objects must have same hash");
 }
 
 - (void)testAmountStorage {
   
-  Euro *euro = [[Euro alloc] initWithAmount:2];
+  Euro *euro = [Money euroWithAmount:2];
 //  XCTAssertEqual(2, [euro amount],@"The value retrieved should be the same as the stored");
 //  XCTAssertEqualObjects(@(2),[euro performSelector:@selector(amount)],@"The value retrieved should be the same as the stored");
   

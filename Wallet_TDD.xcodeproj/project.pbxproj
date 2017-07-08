@@ -13,10 +13,6 @@
 		1E5482011F0B2EB700E900AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5481FF1F0B2EB700E900AB /* Main.storyboard */; };
 		1E5482031F0B2EB700E900AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E5482021F0B2EB700E900AB /* Assets.xcassets */; };
 		1E5482061F0B2EB700E900AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E5482041F0B2EB700E900AB /* LaunchScreen.storyboard */; };
-		1E5482211F0B35BB00E900AB /* EuroTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5482201F0B35BB00E900AB /* EuroTest.m */; };
-		1EFA89531F0B37A300B86CCA /* Euro.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA89521F0B37A300B86CCA /* Euro.m */; };
-		1EFA89551F0CA93400B86CCA /* DolarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA89541F0CA93400B86CCA /* DolarTest.m */; };
-		1EFA89581F0CAAA100B86CCA /* Dolar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA89571F0CAAA100B86CCA /* Dolar.m */; };
 		1EFA895B1F0CAF9200B86CCA /* Money.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA895A1F0CAF9200B86CCA /* Money.m */; };
 		1EFA895F1F0CC2B400B86CCA /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA895E1F0CC2B400B86CCA /* NSObject+GNUStepAddons.m */; };
 		1EFA89611F0CC5CD00B86CCA /* MoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EFA89601F0CC5CD00B86CCA /* MoneyTest.m */; };
@@ -33,7 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E3BCF8D1F0FB31100E9A995 /* Money-Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Money-Private.h"; sourceTree = "<group>"; };
 		1E5481F31F0B2EB600E900AB /* Wallet_TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet_TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5481F71F0B2EB600E900AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1E5481F91F0B2EB600E900AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -46,12 +41,6 @@
 		1E5482071F0B2EB700E900AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E54820C1F0B2EB700E900AB /* Wallet_TDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Wallet_TDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5482121F0B2EB700E900AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E5482201F0B35BB00E900AB /* EuroTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EuroTest.m; sourceTree = "<group>"; };
-		1EFA89511F0B37A300B86CCA /* Euro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Euro.h; path = Models/Euro.h; sourceTree = "<group>"; };
-		1EFA89521F0B37A300B86CCA /* Euro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Euro.m; path = Models/Euro.m; sourceTree = "<group>"; };
-		1EFA89541F0CA93400B86CCA /* DolarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DolarTest.m; sourceTree = "<group>"; };
-		1EFA89561F0CAAA100B86CCA /* Dolar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dolar.h; sourceTree = "<group>"; };
-		1EFA89571F0CAAA100B86CCA /* Dolar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dolar.m; sourceTree = "<group>"; };
 		1EFA89591F0CAF9200B86CCA /* Money.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Money.h; sourceTree = "<group>"; };
 		1EFA895A1F0CAF9200B86CCA /* Money.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Money.m; sourceTree = "<group>"; };
 		1EFA895D1F0CC2B400B86CCA /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
@@ -141,8 +130,6 @@
 		1E54821F1F0B35A600E900AB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1E5482201F0B35BB00E900AB /* EuroTest.m */,
-				1EFA89541F0CA93400B86CCA /* DolarTest.m */,
 				1EFA89601F0CC5CD00B86CCA /* MoneyTest.m */,
 			);
 			name = Models;
@@ -151,13 +138,8 @@
 		1EFA89501F0B378900B86CCA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1EFA89511F0B37A300B86CCA /* Euro.h */,
-				1EFA89521F0B37A300B86CCA /* Euro.m */,
-				1EFA89561F0CAAA100B86CCA /* Dolar.h */,
-				1EFA89571F0CAAA100B86CCA /* Dolar.m */,
 				1EFA89591F0CAF9200B86CCA /* Money.h */,
 				1EFA895A1F0CAF9200B86CCA /* Money.m */,
-				1E3BCF8D1F0FB31100E9A995 /* Money-Private.h */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -276,9 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EFA895B1F0CAF9200B86CCA /* Money.m in Sources */,
-				1EFA89581F0CAAA100B86CCA /* Dolar.m in Sources */,
 				1EFA895F1F0CC2B400B86CCA /* NSObject+GNUStepAddons.m in Sources */,
-				1EFA89531F0B37A300B86CCA /* Euro.m in Sources */,
 				1E5481FE1F0B2EB600E900AB /* ViewController.m in Sources */,
 				1E5481FB1F0B2EB600E900AB /* AppDelegate.m in Sources */,
 				1E5481F81F0B2EB600E900AB /* main.m in Sources */,
@@ -290,8 +270,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EFA89611F0CC5CD00B86CCA /* MoneyTest.m in Sources */,
-				1EFA89551F0CA93400B86CCA /* DolarTest.m in Sources */,
-				1E5482211F0B35BB00E900AB /* EuroTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

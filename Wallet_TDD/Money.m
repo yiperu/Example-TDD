@@ -32,11 +32,10 @@
   return self;
 }
 
-- (Money *)times:(NSUInteger)multiplier {
+- (id)times:(NSUInteger)multiplier {
   
-  // Este metodo no se deberia llamar
-  // Sino que se debería usar el que se implementa en la subclase
-  return [self subclassResponsibility:_cmd];
+  return [[Dolar alloc] initWithAmount:[self.amount integerValue] * multiplier];
+  
 }
 
 #pragma mark - Overwritten

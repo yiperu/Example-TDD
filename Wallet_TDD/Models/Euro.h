@@ -12,6 +12,6 @@
 
 @interface Euro : Money
 
-- (Euro *)times:(NSUInteger)multiplier;
+
 
 @end

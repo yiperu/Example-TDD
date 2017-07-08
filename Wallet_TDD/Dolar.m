@@ -11,10 +11,5 @@
 
 @implementation Dolar
 
-- (Dolar *)times:(NSUInteger)multiplier {
-  
-  return [[Dolar alloc] initWithAmount:[self.amount integerValue] * multiplier];
-  
-}
 
 @end

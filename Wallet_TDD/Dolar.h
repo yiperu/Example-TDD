@@ -11,6 +11,5 @@
 
 @interface Dolar : Money
 
-- (Dolar *)times:(NSUInteger)multiplier;
 
 @end

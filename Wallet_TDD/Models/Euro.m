@@ -12,10 +12,6 @@
 
 @implementation Euro
 
-- (Euro *)times:(NSUInteger)multiplier {
-  
-  return [[Euro alloc] initWithAmount:[self.amount integerValue] * multiplier];
-  
-}
+
 
 @end

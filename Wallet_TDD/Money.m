@@ -15,18 +15,18 @@
 @implementation Money
 
 + (id)euroWithAmount:(NSInteger)amount {
-  return [[Euro alloc] initWithAmount:amount];
+  return [[Money alloc] initWithAmount:amount andCurrency:@"EUR"];
 }
 
 + (id)dollarWithAmount:(NSInteger)amount {
-  return [[Dolar alloc] initWithAmount:amount];
+  return [[Money alloc] initWithAmount:amount andCurrency:@"USD"];
 }
 
-
-- (instancetype)initWithAmount:(NSInteger)amount {
+- (instancetype)initWithAmount:(NSInteger)amount andCurrency:(NSString *)currency {
   
   if(self = [super init]) {
     _amount = @(amount);
+    _currency = currency;
   }
   
   return self;
@@ -34,7 +34,7 @@
 
 - (id)times:(NSUInteger)multiplier {
   
-  return [[Dolar alloc] initWithAmount:[self.amount integerValue] * multiplier];
+  return [[Money alloc] initWithAmount:[self.amount integerValue] * multiplier andCurrency:self.currency];
   
 }
 
@@ -53,6 +53,6 @@
 //El metodo hash es del la superclase del method NSObject
 //devuelve un numero que es la direccion de memoria, la direccion donde esta el objeto
 - (NSUInteger)hash {
-  return (NSUInteger)self.amount;
+  return [self.amount unsignedIntegerValue];
 }
 @end

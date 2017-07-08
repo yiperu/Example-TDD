@@ -18,11 +18,11 @@
 
 - (void)testAmountStorage {
   
-  Money *money = [[Money alloc] initWithAmount:2];
+  Money *money = [[Money alloc] initWithAmount:2 andCurrency:@"USD"];
   //  XCTAssertEqual(2, [euro amount],@"The value retrieved should be the same as the stored");
   //  XCTAssertEqualObjects(@(2),[euro performSelector:@selector(amount)],@"The value retrieved should be the same as the stored");
   
-  // Vamos a hacer que el compilador se calle:
+  // Vamos a hacer que el compilador se calle para este warning:
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wundeclared-selector"
   
@@ -35,9 +35,10 @@
 
 - (void)testCurriencies {
   
-  XCTAssertEqualObjects([[[Money alloc] initWithAmount:1] currency], @"EUR",@"Should be Equal");
-  XCTAssertEqualObjects([[[Money alloc] initWithAmount:1] currency], @"USD",@"Should be Equal");
   
+  XCTAssertEqualObjects([[Money euroWithAmount:1] currency], @"EUR",@"Should be Equal");
+  XCTAssertEqualObjects([[Money dollarWithAmount:1] currency], @"USD",@"Should be Equal");
+
 }
 
 @end

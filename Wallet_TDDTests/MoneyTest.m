@@ -32,4 +32,12 @@
   
 }
 
+
+- (void)testCurriencies {
+  
+  XCTAssertEqualObjects([[[Money alloc] initWithAmount:1] currency], @"EUR",@"Should be Equal");
+  XCTAssertEqualObjects([[[Money alloc] initWithAmount:1] currency], @"USD",@"Should be Equal");
+  
+}
+
 @end

@@ -17,5 +17,5 @@
 
 - (instancetype)initWithAmount:(NSInteger)amount andCurrency:(NSString *)currency;
 - (id)times:(NSUInteger)multiplier;
-
+- (Money *)plus:(Money *)money;
 @end

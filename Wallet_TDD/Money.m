@@ -41,6 +41,14 @@
   
 }
 
+- (Money *)plus:(Money *)money {
+  
+  NSInteger suma = [self.amount integerValue] + [money.amount integerValue];
+  Money *total = [[Money alloc] initWithAmount:suma andCurrency:self.currency];
+  return total;
+}
+
+
 #pragma mark - Overwritten
 - (NSString *)description {
   // TODO: Verificar

@@ -37,4 +37,20 @@
 
 }
 
+// $10 == e5 2:1
+- (void)testReduction {
+
+  Broker *broker = [[Broker alloc] init];
+  [broker addRate:2 fromCurrency:@"USD" toCurrency:@"EUR"];
+  
+  Money *dollar = [Money dollarWithAmount:10];
+  Money *euros = [Money euroWithAmount:5];
+  
+  Money *converter = [broker reduce:dollar toCurrency:@"EUR"];
+  
+  XCTAssertEqualObjects(converter, euros,@"$10 = e5 2:1");
+  
+}
+
+
 @end

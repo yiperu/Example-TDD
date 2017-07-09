@@ -100,5 +100,20 @@
   XCTAssertEqualObjects(total, ten, @"5 + 5 = 10");
 }
 
+// Cuando se detecte que algo esta mal, rapidamente se les debe crear un test para confiar en un futuro y esto no vuelva a ocurrir:
+- (void)testThatHashIsAmount {
+  Money *one = [Money dollarWithAmount:1];
+  XCTAssertEqual([one hash], 1, @"The hash must be the same as the amount");
+}
+
+- (void)testDescription {
+  
+  Money *one = [Money dollarWithAmount:1];
+  NSString *desc = @"<Money amount: 1>";
+  
+  XCTAssertEqualObjects([one description], desc, @"Description must be match template");
+}
+
+
 
 @end

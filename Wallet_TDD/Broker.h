@@ -12,5 +12,6 @@
 @interface Broker : NSObject
 
 - (Money *)reduce:(Money *)money toCurrency:(NSString * )currency;
+- (void)addRate:(NSInteger)rate fromCurrency:(NSString *)fCurrendy toCurrency:(NSString *)tCurrendy;
 
 @end

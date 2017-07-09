@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E38E50C1F12E3710038E26B /* BrokerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E38E50B1F12E3710038E26B /* BrokerTest.m */; };
 		1E5481F81F0B2EB600E900AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5481F71F0B2EB600E900AB /* main.m */; };
 		1E5481FB1F0B2EB600E900AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5481FA1F0B2EB600E900AB /* AppDelegate.m */; };
 		1E5481FE1F0B2EB600E900AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5481FD1F0B2EB600E900AB /* ViewController.m */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E38E50B1F12E3710038E26B /* BrokerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrokerTest.m; sourceTree = "<group>"; };
 		1E5481F31F0B2EB600E900AB /* Wallet_TDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wallet_TDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E5481F71F0B2EB600E900AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1E5481F91F0B2EB600E900AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				1EFA89601F0CC5CD00B86CCA /* MoneyTest.m */,
+				1E38E50B1F12E3710038E26B /* BrokerTest.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E38E50C1F12E3710038E26B /* BrokerTest.m in Sources */,
 				1EFA89611F0CC5CD00B86CCA /* MoneyTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

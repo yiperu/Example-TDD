@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "Broker.h"
 #import "Money.h"
 
 @interface BrokerTest : XCTestCase

@@ -92,5 +92,13 @@
   XCTAssertEqual([[Money dollarWithAmount:1] hash], [[Money dollarWithAmount:1] hash], @"Equal objects must have same hash");
 }
 
+- (void)testSimpleAdition {
+  
+  Money *total = [[Money dollarWithAmount:5] plus:[Money dollarWithAmount:5]];
+  Money *ten = [Money dollarWithAmount:10];
+  
+  XCTAssertEqualObjects(total, ten, @"5 + 5 = 10");
+}
+
 
 @end

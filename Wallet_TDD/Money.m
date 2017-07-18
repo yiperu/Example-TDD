@@ -52,7 +52,7 @@
 #pragma mark - Overwritten
 - (NSString *)description {
   // TODO: Verificar
-  return [NSString stringWithFormat:@"<%@ amount: %li>", [self class], [[self amount] integerValue]];
+  return [NSString stringWithFormat:@"<Class: %@, currency: %@, amount: %li>", [self class],self.currency, [[self amount] integerValue]];
 }
 
 #pragma mark - overwritten

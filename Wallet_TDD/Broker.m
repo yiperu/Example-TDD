@@ -24,16 +24,27 @@
 
 - (Money *)reduce:(Money *)money toCurrency:(NSString * )currency {
 
+  
+  if ([money.currency isEqualToString:currency]) {
+    return money;
+  }
+  
   double rate = [[self.rates objectForKey:[self keyFromCurrency:money.currency toCurrency:currency]] doubleValue];
-  
-  NSInteger monto = (NSInteger)money.amount * rate; // Esto no me comvence ???hat   [money.amount integerValue] * rate
-  Money * newMoney = [[Money alloc] initWithAmount:monto andCurrency:currency];
-  
-  return newMoney;
+  Money *resul;
+  if (rate == 0) {
+    // No hay tasa de conversion, exepcion que te crio
+    [NSException raise:@"NoConversionRateException" format:@"Must have a conversion from %@ to %@", money.currency, currency];
+  } else {
+    NSInteger monto = [money.amount integerValue] * rate; // Esto no me comvence ???hat   [money.amount integerValue] * rate
+    resul = [[Money alloc] initWithAmount:monto andCurrency:currency];
+  }
+  return resul;
+
 }
 
 - (void)addRate:(NSInteger)rate fromCurrency:(NSString *)fCurrendy toCurrency:(NSString *)tCurrendy {
-  [self.rates setObject:@(rate) forKey:[self keyFromCurrency:fCurrendy toCurrency:tCurrendy]];
+  [self.rates setObject:@(1.0/rate) forKey:[self keyFromCurrency:fCurrendy toCurrency:tCurrendy]];
+  [self.rates setObject:@(rate) forKey:[self keyFromCurrency:tCurrendy toCurrency:fCurrendy]];
 }
 
 

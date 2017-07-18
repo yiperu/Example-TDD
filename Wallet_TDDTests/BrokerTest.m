@@ -44,7 +44,7 @@
 // $10 == e5 2:1
 - (void)testReduction {
 
-  [self.emptyBroker addRate:2 fromCurrency:@"USD" toCurrency:@"EUR"];
+  [self.emptyBroker addRate:2.0 fromCurrency:@"USD" toCurrency:@"EUR"];
   
   Money *dollar = [Money dollarWithAmount:10];
   Money *euros = [Money euroWithAmount:5];

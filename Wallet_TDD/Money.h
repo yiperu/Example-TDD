@@ -11,6 +11,7 @@
 @interface Money : NSObject
 
 @property (nonatomic, strong) NSString *currency;
+@property (nonatomic, strong, readonly) NSNumber *amount;
 
 + (id)euroWithAmount:(NSInteger)amount;
 + (id)dollarWithAmount:(NSInteger)amount;

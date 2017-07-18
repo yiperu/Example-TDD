@@ -24,8 +24,12 @@
 
 - (Money *)reduce:(Money *)money toCurrency:(NSString * )currency {
 
+  double rate = [[self.rates objectForKey:[self keyFromCurrency:money.currency toCurrency:currency]] doubleValue];
   
-  return money;
+  NSInteger monto = (NSInteger)money.amount * rate; // Esto no me comvence ???hat   [money.amount integerValue] * rate
+  Money * newMoney = [[Money alloc] initWithAmount:monto andCurrency:currency];
+  
+  return newMoney;
 }
 
 - (void)addRate:(NSInteger)rate fromCurrency:(NSString *)fCurrendy toCurrency:(NSString *)tCurrendy {
